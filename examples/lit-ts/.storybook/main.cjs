@@ -14,6 +14,7 @@ module.exports = {
   features: {
     buildStoriesJson: true,
     storyStoreV7: true,
+    previewMdx2: true,
   },
   async viteFinal(config, { configType }) {
     return mergeConfig(config, {
