@@ -9,6 +9,9 @@ module.exports = {
     // we don't want to muck up the data when we're working on the builder
     disableTelemetry: true,
   },
+  features: {
+    previewMdx2: true,
+  },
   async viteFinal(config) {
     // because rollup does not respect NODE_PATH, and we have a funky example setup that needs it
     config.build.rollupOptions = {

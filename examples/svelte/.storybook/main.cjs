@@ -12,6 +12,7 @@ module.exports = {
   features: {
     // On-demand store does not work for .svelte stories, only CSF.
     storyStoreV7: false,
+    previewMdx2: true,
   },
   async viteFinal(config) {
     // because rollup does not respect NODE_PATH, and we have a funky example setup that needs it

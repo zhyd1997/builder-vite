@@ -11,6 +11,7 @@ module.exports = {
   },
   features: {
     storyStoreV7: true,
+    previewMdx2: true,
   },
   async viteFinal(config) {
     // because rollup does not respect NODE_PATH, and we have a funky example setup that needs it
