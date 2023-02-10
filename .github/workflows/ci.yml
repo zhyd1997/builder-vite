@@ -71,7 +71,7 @@ jobs:
       fail-fast: false
       matrix:
         node-version: [16.x]
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        os: [ubuntu-latest, windows-2019, macOS-latest]
         framework: [lit-ts, preact, react, react-18, react-ts, svelte, vue2.6, vue2.7, vue3, workspaces]
 
     steps:
