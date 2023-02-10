@@ -25,7 +25,7 @@ module.exports = {
           plugins: {
             resolveId: function (code) {
               console.warn(__dirname)
-              const dirname = __dirname.replace(/\//g, '\\')
+              const dirname = __dirname.replace(/\:\/a\/builder-vite\/builder-vite\/examples\/preact\/iframe.html/g, ':\\a\\builder-vite\\builder-vite\\examples\\preact\\iframe.html')
               console.log(dirname)
               if (code === 'react') return path.join(dirname, require.resolve('react'));
             },
