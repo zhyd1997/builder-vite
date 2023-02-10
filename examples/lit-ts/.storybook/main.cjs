@@ -25,7 +25,7 @@ module.exports = {
           plugins: {
             resolveId: function (code) {
               console.warn(__dirname)
-              const dirname = __dirname.replace('\\', '')
+              const dirname = __dirname.replace(/\//g, '\\')
               console.log(dirname)
               if (code === 'react') return path.join(dirname, require.resolve('react'));
             },
