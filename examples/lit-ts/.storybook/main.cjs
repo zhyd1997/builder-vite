@@ -24,7 +24,10 @@ module.exports = {
         rollupOptions: {
           plugins: {
             resolveId: function (code) {
-              if (code === 'react') return path.resolve(__dirname, require.resolve('react'));
+              console.warn(__dirname)
+              const dirname = __dirname.replace('\\', '')
+              console.log(dirname)
+              if (code === 'react') return path.join(dirname, require.resolve('react'));
             },
           },
         },
