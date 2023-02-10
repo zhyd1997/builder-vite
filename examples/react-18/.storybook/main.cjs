@@ -17,7 +17,7 @@ module.exports = {
     config.build.rollupOptions = {
       plugins: {
         resolveId: function (code, id) {
-          if (code === 'react') return path.resolve(require.resolve('react'));
+          if (code === 'react') return path.resolve(__dirname, require.resolve('react'));
         },
       },
     };
